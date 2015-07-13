@@ -7,21 +7,21 @@ eureka:
   instance:
     hostname:  localhost
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: https://warm-ocean-4454.herokuapp.com/eureka/
 
 ---  
 spring:
   profiles: heroku
 eureka:
   instance:
-    leaseRenewalIntervalInSeconds: 10
     hostname: ${DOMAIN_NAME}
+    leaseRenewalIntervalInSeconds: 10
     nonSecurePort: 80
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
       defaultZone: ${EUREKA_URL:http://user:password@localhost:5000}/eureka/	   
