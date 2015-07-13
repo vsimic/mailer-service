@@ -19,4 +19,9 @@ eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
     hostname: ${DOMAIN_NAME}
-    nonSecurePort: 80	   
+    nonSecurePort: 80
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://user:password@localhost:5000}/eureka/	   
