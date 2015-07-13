@@ -1,0 +1,16 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/emails?createDatabaseIfNotExist=true
+spring.datasource.username=sima
+spring.datasource.password=sima
+spring.datasource.driverClassName=com.mysql.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=update
+
+server.port=0
+
+mailer.recepient.default=bookshop@mail.com.com
+mailer.verification.subject=Verification email
+mailer.sender.default=Books app
+mailer.api.key= MK-Rq283hJV6rmj9DPJxVQ
+mailer.api.version= 1.0
+mailer.api.url= https://mandrillapp.com/api
+
+notification.accessLink.pattern=https://loalhost:8080/activate/

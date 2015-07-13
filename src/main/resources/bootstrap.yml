@@ -1,0 +1,7 @@
+spring:
+  data:
+    mongodb:
+      uri:  mongodb://sima:sima@ds055802.mongolab.com:55802/mailer_service
+  application:
+    name: mailer-service
+    
