@@ -1,1 +1,1 @@
-web: java -jar -Dserver.port=$PORT target/mailer-service*.jar
+web: java -jar -Dserver.port=$PORT target/mailer-service*.jar --spring.profiles.active=heroku
